@@ -1,0 +1,11 @@
+services:
+  backend:
+    image: backend-project:latest
+    ports:
+      - "8080:8080"
+    container_name: "backend-project-2.3"
+  frontend:
+    image: frontend-project:latest
+    ports:
+      - "80:5000"
+    container_name: "frontend-project-2.3"
